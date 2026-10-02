@@ -55,4 +55,4 @@ claude plugin validate --strict .          # manifest, skills, agents
 claude plugin eval .                       # behavior evals (costs tokens)
 ```
 
-Design spec: `docs/specs/2026-10-02-wave-planning-plugin-design.md`. License: MIT.
+License: MIT.
