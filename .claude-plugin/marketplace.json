@@ -1,0 +1,12 @@
+{
+  "name": "arunprakashg-plugins",
+  "description": "Plugins by Arun Prakash G",
+  "owner": { "name": "Arun Prakash G" },
+  "plugins": [
+    {
+      "name": "wave-planning",
+      "source": "./",
+      "description": "Wave planning for parallel AI development: specs, waves, worktree-isolated subagents, model routing, validation gates."
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+.worktrees/
+__pycache__/
+*.pyc
+evals/results/
+.DS_Store
