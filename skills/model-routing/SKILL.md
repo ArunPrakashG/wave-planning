@@ -44,7 +44,7 @@ The plan validator rejects a `model` that disagrees with its `score`, unless the
 - The orchestrator passes the tier as the Agent call's `model` parameter (`haiku`, `sonnet`, `opus`).
 - A phase that fails its gate retries once on the same tier with the failure output, then moves up exactly one tier, then stops and asks the user. Haiku → sonnet → opus. A failure on opus is never retried on a lower tier.
 - `wave-validator` never runs below sonnet. Run it on opus for any wave that contains a phase whose spec has a `risk` flag.
-- If the environment sets `CLAUDE_CODE_SUBAGENT_MODEL_FORCE=1`, every subagent runs on one model and routing has no effect. Warn the user before executing.
+- If the user has forced a single subagent model with `CLAUDE_CODE_SUBAGENT_MODEL_FORCE=1`, every subagent runs on that model and routing has no effect. `wave-execute` warns them before running.
 
 ## Sanity examples
 

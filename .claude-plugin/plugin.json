@@ -1,7 +1,7 @@
 {
   "name": "wave-planning",
   "displayName": "Wave Planning",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Plan software as dependency-ordered waves, then execute each wave's phases in parallel subagents in git worktrees, with automatic model routing and validation gates.",
   "author": {
     "name": "Arun Prakash",

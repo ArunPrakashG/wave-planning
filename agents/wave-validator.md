@@ -21,7 +21,7 @@ You verify; you never repair. If something fails, report it with evidence and st
 
 - `test:<path or id>`: run the unit-test command from the brief scoped to that path or id. PASS only if it passes and at least one test actually ran.
 - `cmd:<command>`: run exactly that command. PASS only on exit code 0.
-- `http:<request and expectation>`: use the run hint in the brief to start the app, make the request with `curl`, compare the response to the expectation, then stop the server you started. If the brief has no run hint, report UNVERIFIED.
+- `http:<request and expectation>`: use the run hint in the brief to start the app, then make the request with the bundled checker and stop the server you started: `python3 "${CLAUDE_PLUGIN_ROOT}/scripts/http_check.py" METHOD URL [--json BODY] [--expect-status N] [--expect-body TEXT]`. It prints `STATUS`, a `BODY` excerpt and `PASS` or `FAIL`, and only talks to loopback hosts. If the brief has no run hint, report UNVERIFIED.
 - `design-fidelity:<screen-id>`: compare the implemented screen to that screen in the design snapshot (copy, structure, hierarchy, spacing and colour tokens). If browser tools are available, render the screen and compare visually. If not, compare structure and tokens statically and report UNVERIFIED with `visual not checked`.
 
 Then run every integration check in the brief the same way.

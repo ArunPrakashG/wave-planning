@@ -22,6 +22,7 @@ REQUIRED_FILES = [
     "scripts/validate_plan.py",
     "scripts/routing.py",
     "scripts/check_owned.py",
+    "scripts/http_check.py",
     "templates/spec.md",
     "templates/plan.md",
     "README.md",

@@ -224,7 +224,7 @@ Open implementation detail: how workers read a Claude Design artifact at executi
 
 ## 12. Publishing
 
-- **Own marketplace (first):** push to GitHub; `.claude-plugin/marketplace.json` with one entry (`name: wave-planning`, `source: "./"`) so users run `claude plugin marketplace add <owner>/<repo>` then `claude plugin install wave-planning@<marketplace>`. Entry name must equal the manifest name. Set `version` and bump it on every release (otherwise users stay on the old copy), or omit it to track commit SHAs.
+- **Own marketplace (first):** push to GitHub; `.claude-plugin/marketplace.json` with one entry (`name: wave-planning`, `source: "./"`) so users can add the marketplace and install the plugin by name (the exact commands are in the README). Entry name must equal the manifest name. Set `version` and bump it on every release (otherwise users stay on the old copy), or omit it to track commit SHAs.
 - **Anthropic's directory:** submit via the developer portal at claude.ai/directory/manage (requires a paid claude.ai plan). The portal applies rules the CLI does not check, so a clean local `--strict` run is necessary but not sufficient. `claude-plugins-official` does not accept portal submissions. Set `icon`, `documentationUrl`, `supportUrl`, `privacyPolicyUrl`, `termsOfServiceUrl` in `plugin.json` for the listing. Directory listing reaches claude.ai/Cowork too, where this plugin's subagent/worktree components do not apply — the README and listing must say it is for Claude Code.
 
 ## 13. Open items (resolve in the implementation plan)

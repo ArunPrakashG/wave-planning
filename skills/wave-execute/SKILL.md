@@ -29,7 +29,7 @@ All state lives in the `yaml status` block of `plan.md`, so a run can always be 
 
    Any `ERROR` stops the run. Show it to the user and do not execute an invalid plan.
 2. Confirm this is a git repository with at least one commit. If not, offer `git init` plus an initial commit and wait for a yes.
-3. Run `printenv CLAUDE_CODE_SUBAGENT_MODEL_FORCE`. If it prints `1`, tell the user that model routing will be overridden and ask whether to continue.
+3. Tell the user: if they have forced a single subagent model (the `CLAUDE_CODE_SUBAGENT_MODEL_FORCE` setting), every phase will run on that one model and the plan's routing will have no effect. Ask them to confirm they have not set it, or that they want to continue anyway. Do not read their environment yourself.
 4. Set up branches and the worktree directory: [references/worktrees.md](references/worktrees.md), section "Setup". Run the plan's `bootstrap` command in the main tree.
 5. If the status block shows earlier progress, do "Resume" in [references/failure-handling.md](references/failure-handling.md) before dispatching anything.
 
