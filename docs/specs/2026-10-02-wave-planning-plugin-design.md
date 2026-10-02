@@ -155,7 +155,9 @@ The planner scores each phase 0–2 on four signals:
 
 ## 7. Execution (`wave-execute`)
 
-The orchestrator is the main session. It never writes product code; it dispatches, verifies, merges, gates, and reports. State lives only in `plan.md`'s status block, so a run is resumable.
+The orchestrator is the main session. It never writes product code; it dispatches, verifies, merges, gates, and reports.
+
+**Invariant: only the orchestrator spawns subagents.** `wave-worker` and `wave-validator` are leaf nodes: their `tools` allowlists omit `Agent`, and their briefs forbid delegation. This keeps ownership, model routing, and gating in one place and makes every phase map to exactly one subagent. State lives only in `plan.md`'s status block, so a run is resumable.
 
 **Branches and worktrees.** The orchestrator keeps branch `wave/integration` checked out in the main working tree. For each phase it creates a worktree itself:
 
