@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" width="1280" height="640" role="img" aria-label="wave-planning">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="wave" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="640" fill="url(#bg)"/>
+  <g transform="translate(120 152) scale(0.675)">
+    <g fill="none" stroke="url(#wave)" stroke-width="30" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M96 160 Q136 104 176 160 T256 160 T336 160 T416 160" opacity="1"/>
+      <path d="M96 256 Q136 312 176 256 T256 256 T336 256 T416 256" opacity="0.72"/>
+      <path d="M96 352 Q136 296 176 352 T256 352 T336 352 T416 352" opacity="0.44"/>
+    </g>
+  </g>
+  <g font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif">
+    <text x="520" y="285" font-size="88" font-weight="700" fill="#f8fafc">wave-planning</text>
+    <text x="522" y="348" font-size="40" fill="#c4b5fd">Plan in waves. Build in parallel.</text>
+    <text x="522" y="412" font-size="28" fill="#94a3b8">A Claude Code plugin: specs, parallel subagents</text>
+    <text x="522" y="452" font-size="28" fill="#94a3b8">in git worktrees, model routing, validation gates.</text>
+  </g>
+</svg>

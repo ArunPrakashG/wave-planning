@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/banner.svg" alt="wave-planning: plan in waves, build in parallel" width="100%">
+</p>
+
 # wave-planning
 
 A Claude Code plugin for **wave planning**: plan software as dependency-ordered *waves*, then build each wave's *phases* in parallel with subagents, each in its own git worktree, on the cheapest model that is adequate for the job.

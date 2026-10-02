@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 320" width="1280" height="320" role="img" aria-label="wave-planning: plan in waves, build in parallel">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="wave" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="320" rx="24" fill="url(#bg)"/>
+  <g transform="translate(64 64) scale(0.375)">
+    <g fill="none" stroke="url(#wave)" stroke-width="30" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M96 160 Q136 104 176 160 T256 160 T336 160 T416 160" opacity="1"/>
+      <path d="M96 256 Q136 312 176 256 T256 256 T336 256 T416 256" opacity="0.72"/>
+      <path d="M96 352 Q136 296 176 352 T256 352 T336 352 T416 352" opacity="0.44"/>
+    </g>
+  </g>
+  <g font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif">
+    <text x="300" y="150" font-size="76" font-weight="700" fill="#f8fafc">wave-planning</text>
+    <text x="302" y="205" font-size="32" fill="#c4b5fd">Plan in waves. Build in parallel.</text>
+    <text x="302" y="254" font-size="22" fill="#94a3b8">dependency-ordered waves · parallel subagents · model routing · validation gates</text>
+  </g>
+</svg>
