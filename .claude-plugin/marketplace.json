@@ -1,7 +1,7 @@
 {
   "name": "arunprakashg-plugins",
-  "description": "Plugins by Arun Prakash G",
-  "owner": { "name": "Arun Prakash G" },
+  "description": "Plugins by Arun Prakash",
+  "owner": { "name": "Arun Prakash" },
   "plugins": [
     {
       "name": "wave-planning",

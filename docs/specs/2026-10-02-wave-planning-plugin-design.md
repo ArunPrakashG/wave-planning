@@ -1,6 +1,6 @@
 # wave-planning plugin — design spec
 
-Date: 2026-10-02 · Status: draft for review · Author: Arun Prakash G
+Date: 2026-10-02 · Status: draft for review · Author: Arun Prakash
 
 ## 1. Purpose
 

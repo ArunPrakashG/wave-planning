@@ -97,7 +97,7 @@ Run the whole suite from the repo root with `python3 -m unittest discover -s tes
   "displayName": "Wave Planning",
   "version": "0.1.0",
   "description": "Plan software as dependency-ordered waves, then execute each wave's phases in parallel subagents in git worktrees, with automatic model routing and validation gates.",
-  "author": { "name": "Arun Prakash G", "url": "https://arunprakashg.com" },
+  "author": { "name": "Arun Prakash", "url": "https://arunprakashg.com" },
   "homepage": "https://arunprakashg.com/blogs/wave-planning-parallel-ai-development/",
   "license": "MIT",
   "keywords": ["wave-planning", "parallel-agents", "subagents", "git-worktrees", "planning", "orchestration"]
@@ -113,8 +113,8 @@ Run the whole suite from the repo root with `python3 -m unittest discover -s tes
 ```json
 {
   "name": "arunprakashg-plugins",
-  "description": "Plugins by Arun Prakash G",
-  "owner": { "name": "Arun Prakash G" },
+  "description": "Plugins by Arun Prakash",
+  "owner": { "name": "Arun Prakash" },
   "plugins": [
     {
       "name": "wave-planning",
@@ -137,7 +137,7 @@ evals/results/
 .DS_Store
 ```
 
-`LICENSE` is the standard MIT license text with the line `Copyright (c) 2026 Arun Prakash G`.
+`LICENSE` is the standard MIT license text with the line `Copyright (c) 2026 Arun Prakash`.
 
 - [ ] **Step 4: Validate**
 
