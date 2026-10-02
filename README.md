@@ -16,7 +16,7 @@ Background: [Wave Planning: Parallel AI Development](https://arunprakashg.com/bl
 ## Install
 
 ```bash
-claude plugin marketplace add <owner>/<repo>
+claude plugin marketplace add ArunPrakashG/wave-planning
 claude plugin install wave-planning@arunprakashg-plugins
 ```
 

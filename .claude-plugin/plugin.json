@@ -3,8 +3,19 @@
   "displayName": "Wave Planning",
   "version": "0.1.0",
   "description": "Plan software as dependency-ordered waves, then execute each wave's phases in parallel subagents in git worktrees, with automatic model routing and validation gates.",
-  "author": { "name": "Arun Prakash", "url": "https://arunprakashg.com" },
+  "author": {
+    "name": "Arun Prakash",
+    "url": "https://arunprakashg.com"
+  },
   "homepage": "https://arunprakashg.com/blogs/wave-planning-parallel-ai-development/",
+  "repository": "https://github.com/ArunPrakashG/wave-planning",
   "license": "MIT",
-  "keywords": ["wave-planning", "parallel-agents", "subagents", "git-worktrees", "planning", "orchestration"]
+  "keywords": [
+    "wave-planning",
+    "parallel-agents",
+    "subagents",
+    "git-worktrees",
+    "planning",
+    "orchestration"
+  ]
 }
