@@ -55,4 +55,4 @@ claude plugin validate --strict .          # manifest, skills, agents
 claude plugin eval .                       # behavior evals (costs tokens)
 ```
 
-License: MIT.
+License: MIT. See also the [Privacy Policy](PRIVACY.md) and [Terms of Service](TERMS.md).

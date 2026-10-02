@@ -27,6 +27,8 @@ REQUIRED_FILES = [
     "templates/plan.md",
     "README.md",
     "LICENSE",
+    "PRIVACY.md",
+    "TERMS.md",
 ]
 
 
@@ -101,6 +103,17 @@ class ManifestTests(unittest.TestCase):
         self.assertIn("version", plugin)
         entry_names = [p["name"] for p in market["plugins"]]
         self.assertEqual(entry_names, [plugin["name"]])
+
+    def test_directory_listing_fields_are_https_and_documents_exist(self):
+        plugin = json.loads((REPO / ".claude-plugin" / "plugin.json").read_text())
+        for field in ("documentationUrl", "supportUrl", "privacyPolicyUrl", "termsOfServiceUrl"):
+            self.assertTrue(plugin.get(field, "").startswith("https://"), f"{field} must be an https URL")
+        self.assertTrue(plugin["privacyPolicyUrl"].endswith("/PRIVACY.md"))
+        self.assertTrue(plugin["termsOfServiceUrl"].endswith("/TERMS.md"))
+        self.assertTrue((REPO / "PRIVACY.md").is_file())
+        self.assertTrue((REPO / "TERMS.md").is_file())
+        icon = REPO / plugin["icon"]
+        self.assertTrue(icon.is_file(), f"icon {plugin['icon']} must exist")
 
 
 class RequiredComponentsTests(unittest.TestCase):

@@ -10,6 +10,10 @@
   "homepage": "https://arunprakashg.com/blogs/wave-planning-parallel-ai-development/",
   "repository": "https://github.com/ArunPrakashG/wave-planning",
   "icon": "./assets/logo.png",
+  "documentationUrl": "https://github.com/ArunPrakashG/wave-planning#readme",
+  "supportUrl": "https://github.com/ArunPrakashG/wave-planning/issues",
+  "privacyPolicyUrl": "https://github.com/ArunPrakashG/wave-planning/blob/main/PRIVACY.md",
+  "termsOfServiceUrl": "https://github.com/ArunPrakashG/wave-planning/blob/main/TERMS.md",
   "license": "MIT",
   "keywords": [
     "wave-planning",
